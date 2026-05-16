@@ -1,0 +1,302 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>NONSO WEARS | The Future of Sartorial Elegance</title>
+    <script src="https://cdn.tailwindcss.com"></script>
+    <link href="https://fonts.googleapis.com/css2?family=Cinzel:wght@500;700;900&family=Orbitron:wght@400;700;900&family=Inter:wght@300;400;600&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css">
+    
+    <style>
+        /* Custom Theme Fonts & Variables */
+        .font-luxury { font-family: 'Cinzel', serif; }
+        .font-cyber { font-family: 'Orbitron', sans-serif; }
+        .font-body { font-family: 'Inter', sans-serif; }
+
+        :root {
+            --gold-glow: 0 0 15px rgba(212, 175, 55, 0.6);
+            --gold-bright: #d4af37;
+        }
+
+        body {
+            background-color: #050505;
+            color: #ffffff;
+            overflow-x: hidden;
+        }
+
+        /* Continuous Matrix-like Stitch Animation Background */
+        @keyframes stitchFall {
+            0% { transform: translateY(-100%) scaleY(1); opacity: 0; }
+            10% { opacity: 0.8; }
+            90% { opacity: 0.8; }
+            100% { transform: translateY(100vh) scaleY(1); opacity: 0; }
+        }
+        .stitch-line {
+            position: absolute;
+            width: 2px;
+            height: 40px;
+            background: linear-gradient(to bottom, transparent, var(--gold-bright), transparent);
+            background-image: linear-gradient(to bottom, var(--gold-bright) 50%, transparent 50%);
+            background-size: 100% 8px; /* Creates the dashed stitch look */
+            opacity: 0;
+            animation: stitchFall 6s linear infinite;
+            pointer-events: none;
+        }
+
+        /* Laser Scan Effect */
+        @keyframes laserScan {
+            0% { top: 0%; opacity: 0; }
+            10% { opacity: 1; }
+            90% { opacity: 1; }
+            100% { top: 100%; opacity: 0; }
+        }
+        .laser-scanner {
+            position: absolute;
+            left: 0;
+            width: 100%;
+            height: 3px;
+            background: linear-gradient(90deg, transparent, #d4af37, #fff, #d4af37, transparent);
+            box-shadow: 0 0 12px #d4af37;
+            animation: laserScan 4s ease-in-out infinite;
+        }
+
+        /* Shimmer Gold Text Effect */
+        @keyframes goldShimmer {
+            0% { background-position: -200% mid; }
+            100% { background-position: 200% mid; }
+        }
+        .shimmer-text {
+            background: linear-gradient(90deg, #aa7c11, #fff2a3, #aa7c11, #ffdf73, #aa7c11);
+            background-size: 200% auto;
+            -webkit-background-clip: text;
+            -webkit-text-fill-color: transparent;
+            animation: goldShimmer 6s linear infinite;
+        }
+
+        /* Floating Animation */
+        @keyframes float {
+            0%, 100% { transform: translateY(0px); }
+            50% { transform: translateY(-10px); }
+        }
+        .floating-card {
+            animation: float 4s ease-in-out infinite;
+        }
+
+        /* Custom Scrollbar */
+        ::-webkit-scrollbar { width: 6px; }
+        ::-webkit-scrollbar-track { background: #0a0a0a; }
+        ::-webkit-scrollbar-thumb { background: #d4af37; border-radius: 3px; }
+    </style>
+</head>
+<body class="font-body antialiased">
+
+    <div id="stitch-matrix" class="fixed inset-0 z-0 opacity-20 pointer-events-none"></div>
+
+    <header class="fixed top-0 left-0 w-full z-50 bg-black/80 backdrop-blur-md border-b border-[#d4af37]/20">
+        <div class="max-w-7xl mx-auto px-6 py-4 flex justify-between items-center">
+            <div class="flex items-center space-x-2">
+                <span class="font-luxury text-2xl lg:text-3xl font-black tracking-widest text-[#d4af37] drop-shadow-[0_0_8px_rgba(212,175,55,0.4)]">NW</span>
+                <span class="font-cyber text-xs tracking-widest text-gray-400 border-l border-gray-700 pl-2 hidden sm:inline">NONSO WEARS</span>
+            </div>
+            <nav class="hidden md:flex space-x-8 font-cyber text-xs tracking-widest">
+                <a href="#collection" class="text-gray-300 hover:text-[#d4af37] transition-colors">COLLECTION</a>
+                <a href="#specs" class="text-gray-300 hover:text-[#d4af37] transition-colors">THE COUTURE</a>
+                <a href="#reviews" class="text-gray-300 hover:text-[#d4af37] transition-colors">REVIEWS</a>
+                <a href="#contact" class="text-gray-300 hover:text-[#d4af37] transition-colors">CONNECT</a>
+            </nav>
+            <div>
+                <a href="https://wa.me/2348066299066" target="_blank" class="font-cyber text-xs px-5 py-2.5 bg-transparent border border-[#d4af37] text-[#d4af37] hover:bg-[#d4af37] hover:text-black transition-all duration-300 shadow-[0_0_10px_rgba(212,175,55,0.1)] hover:shadow-[0_0_20px_rgba(212,175,55,0.4)] tracking-widest">ORDER NOW</a>
+            </div>
+        </div>
+    </header>
+
+    <section class="relative min-h-screen flex items-center justify-center pt-24 overflow-hidden z-10">
+        <div class="absolute inset-0 bg-[radial-gradient(#1a1a1a_1px,transparent_1px)] [background-size:16px_16px] opacity-30"></div>
+        
+        <div class="max-w-7xl mx-auto px-6 grid grid-cols-1 lg:grid-cols-12 gap-12 items-center relative w-full">
+            <div class="lg:col-span-7 space-y-6 text-center lg:text-left z-10">
+                <div class="inline-flex items-center space-x-2 px-3 py-1 bg-[#d4af37]/10 border border-[#d4af37]/30 rounded-full font-cyber text-[10px] tracking-widest text-[#d4af37]">
+                    <span class="w-1.5 h-1.5 rounded-full bg-green-400 animate-ping"></span>
+                    <span>NEXT-GEN SARTORIAL ARCHITECTURE</span>
+                </div>
+                <h1 class="font-luxury text-5xl sm:text-6xl xl:text-7xl font-bold tracking-tight leading-none text-white">
+                    DRESS BETTER.<br>
+                    <span class="shimmer-text font-black">STAND OUT.</span>
+                </h1>
+                <p class="text-gray-400 text-sm sm:text-base max-w-xl mx-auto lg:mx-0 font-light leading-relaxed">
+                    Where high-end tailoring merges with futuristic vision. Step into premium wholesale and retail fabrics engineered for the modern vanguard.
+                </p>
+                <div class="flex flex-col sm:flex-row justify-center lg:justify-start gap-4 pt-4 font-cyber text-xs tracking-widest">
+                    <a href="#collection" class="px-8 py-4 bg-[#d4af37] text-black font-bold hover:bg-white transition-all duration-300 text-center shadow-lg shadow-[#d4af37]/20">EXPLORE HUB</a>
+                    <a href="https://wa.me/2348066299066" target="_blank" class="px-8 py-4 border border-gray-700 hover:border-[#d4af37] text-white transition-all duration-300 text-center bg-black/40 backdrop-blur">SECURE TIERS</a>
+                </div>
+            </div>
+
+            <div class="lg:col-span-5 flex justify-center relative">
+                <div class="relative w-72 sm:w-80 md:w-96 aspect-[3/4] bg-gradient-to-b from-neutral-900 to-black border border-neutral-800 rounded-2xl p-4 shadow-2xl group overflow-hidden floating-card">
+                    <div class="laser-scanner"></div>
+                    
+                    <div class="absolute top-4 left-4 font-cyber text-[9px] text-neutral-500 space-y-1 z-20">
+                        <div>SYSTEM: ACTIVE</div>
+                        <div>THREAD_COUNT: GEN-FIRST</div>
+                        <div>FIT: PERFECTED</div>
+                    </div>
+                    
+                    <div class="w-full h-full bg-neutral-950 rounded-xl relative overflow-hidden flex items-center justify-center border border-neutral-900">
+                        <div class="absolute inset-0 bg-cover bg-center mix-blend-luminosity opacity-40 group-hover:opacity-70 group-hover:scale-105 transition-all duration-700" style="background-image: url('https://images.unsplash.com/photo-1593032465175-481da7f67fab?auto=format&fit=crop&q=80&w=800');"></div>
+                        
+                        <div class="absolute w-48 h-48 border border-[#d4af37]/20 rounded-full animate-spin [animation-duration:20s] flex items-center justify-center">
+                            <div class="w-40 h-40 border border-dashed border-[#d4af37]/40 rounded-full"></div>
+                        </div>
+                        
+                        <div class="font-luxury text-6xl text-[#d4af37] font-black z-10 drop-shadow-[0_0_15px_rgba(212,175,55,0.5)] tracking-widest">NW</div>
+                    </div>
+
+                    <div class="absolute bottom-4 right-4 font-cyber text-[10px] text-[#d4af37] tracking-widest bg-black/80 px-3 py-1 border border-[#d4af37]/30 rounded">
+                        WEAR THE STANDARD
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <section class="border-y border-neutral-900 bg-neutral-950/80 backdrop-blur relative z-10 py-8">
+        <div class="max-w-7xl mx-auto px-6 grid grid-cols-1 md:grid-cols-3 gap-8 text-center">
+            <div class="space-y-2 group">
+                <div class="text-2xl text-[#d4af37]"><i class="fa-solid calf-convert fa-tags"></i></div>
+                <h4 class="font-cyber text-xs tracking-widest font-bold text-white">PRICES ARE UNBEATABLE</h4>
+                <p class="text-xs text-neutral-400">Direct-to-consumer value matrix matching premier wholesale pricing structures.</p>
+            </div>
+            <div class="space-y-2 group">
+                <div class="text-2xl text-[#d4af37]"><i class="fa-solid fa-award"></i></div>
+                <h4 class="font-cyber text-xs tracking-widest font-bold text-white">FIRST GRADE & TOP NOTCH</h4>
+                <p class="text-xs text-neutral-400">Rigorous textile engineering verifying composition, weave stability, and drape excellence.</p>
+            </div>
+            <div class="space-y-2 group">
+                <div class="text-2xl text-[#d4af37]"><i class="fa-solid fa-shield-halved"></i></div>
+                <h4 class="font-cyber text-xs tracking-widest font-bold text-white">QUALITY YOU CAN TRUST</h4>
+                <p class="text-xs text-neutral-400">Uncompromising structural longevity built into every stitch of your garments.</p>
+            </div>
+        </div>
+    </section>
+
+    <section id="collection" class="py-24 relative z-10 max-w-7xl mx-auto px-6">
+        <div class="text-center space-y-4 mb-16">
+            <h2 class="font-luxury text-3xl sm:text-4xl font-bold tracking-wider">THE PRODUCT CATALOGUE</h2>
+            <div class="w-24 h-[1px] bg-[#d4af37] mx-auto relative">
+                <div class="absolute w-2 h-2 bg-[#d4af37] rotate-45 -top-[3px] left-11"></div>
+            </div>
+            <p class="font-cyber text-[11px] tracking-widest text-neutral-400">WHOLESALE | RETAIL PROFILES ARCHIVE</p>
+        </div>
+
+        <div class="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 xl:grid-cols-5 gap-6">
+            <div class="bg-neutral-950 border border-neutral-900 rounded-xl p-5 hover:border-[#d4af37]/50 transition-all duration-300 flex flex-col justify-between group relative overflow-hidden">
+                <div class="space-y-4">
+                    <div class="w-12 h-12 rounded-lg bg-neutral-900 flex items-center justify-center border border-neutral-800 text-[#d4af37] text-xl font-bold group-hover:bg-[#d4af37] group-hover:text-black transition-all duration-300">
+                        <i class="fa-solid fa-user-tie"></i>
+                    </div>
+                    <div>
+                        <h3 class="font-luxury text-lg font-bold tracking-wide text-white">SUITS</h3>
+                        <p class="text-xs text-neutral-400 mt-1 leading-relaxed">Impeccably tailored matching arrays built for operations requiring executive dominance.</p>
+                    </div>
+                </div>
+                <div class="mt-6 pt-4 border-t border-neutral-900 flex items-center justify-between font-cyber text-[10px] tracking-widest">
+                    <span class="text-neutral-500">SYSTEM ARCHIVE: 01</span>
+                    <a href="https://wa.me/2348066299066?text=I'm%20interested%20in%20your%20Suits" target="_blank" class="text-[#d4af37] group-hover:underline">ACQUIRE <i class="fa-solid fa-arrow-right ml-1"></i></a>
+                </div>
+            </div>
+
+            <div class="bg-neutral-950 border border-neutral-900 rounded-xl p-5 hover:border-[#d4af37]/50 transition-all duration-300 flex flex-col justify-between group relative overflow-hidden">
+                <div class="space-y-4">
+                    <div class="w-12 h-12 rounded-lg bg-neutral-900 flex items-center justify-center border border-neutral-800 text-[#d4af37] text-xl font-bold group-hover:bg-[#d4af37] group-hover:text-black transition-all duration-300">
+                        <i class="fa-solid fa-vest-patches"></i>
+                    </div>
+                    <div>
+                        <h3 class="font-luxury text-lg font-bold tracking-wide text-white">BLAZERS</h3>
+                        <p class="text-xs text-neutral-400 mt-1 leading-relaxed">Versatile structural jackets that articulate authority across casual and formal environments.</p>
+                    </div>
+                </div>
+                <div class="mt-6 pt-4 border-t border-neutral-900 flex items-center justify-between font-cyber text-[10px] tracking-widest">
+                    <span class="text-neutral-500">SYSTEM ARCHIVE: 02</span>
+                    <a href="https://wa.me/2348066299066?text=I'm%20interested%20in%20your%20Blazers" target="_blank" class="text-[#d4af37] group-hover:underline">ACQUIRE <i class="fa-solid fa-arrow-right ml-1"></i></a>
+                </div>
+            </div>
+
+            <div class="bg-neutral-950 border border-neutral-900 rounded-xl p-5 hover:border-[#d4af37]/50 transition-all duration-300 flex flex-col justify-between group relative overflow-hidden">
+                <div class="space-y-4">
+                    <div class="w-12 h-12 rounded-lg bg-neutral-900 flex items-center justify-center border border-neutral-800 text-[#d4af37] text-xl font-bold group-hover:bg-[#d4af37] group-hover:text-black transition-all duration-300">
+                        <i class="fa-solid fa-socks"></i>
+                    </div>
+                    <div>
+                        <h3 class="font-luxury text-lg font-bold tracking-wide text-white">TROUSERS</h3>
+                        <p class="text-xs text-neutral-400 mt-1 leading-relaxed">Crisp silhouettes cut to flawless geometric parameters ensuring flawless linear cadence.</p>
+                    </div>
+                </div>
+                <div class="mt-6 pt-4 border-t border-neutral-900 flex items-center justify-between font-cyber text-[10px] tracking-widest">
+                    <span class="text-neutral-500">SYSTEM ARCHIVE: 03</span>
+                    <a href="https://wa.me/2348066299066?text=I'm%20interested%20in%20your%20Trousers" target="_blank" class="text-[#d4af37] group-hover:underline">ACQUIRE <i class="fa-solid fa-arrow-right ml-1"></i></a>
+                </div>
+            </div>
+
+            <div class="bg-neutral-950 border border-neutral-900 rounded-xl p-5 hover:border-[#d4af37]/50 transition-all duration-300 flex flex-col justify-between group relative overflow-hidden">
+                <div class="space-y-4">
+                    <div class="w-12 h-12 rounded-lg bg-neutral-900 flex items-center justify-center border border-neutral-800 text-[#d4af37] text-xl font-bold group-hover:bg-[#d4af37] group-hover:text-black transition-all duration-300">
+                        <i class="fa-solid fa-tie"></i>
+                    </div>
+                    <div>
+                        <h3 class="font-luxury text-lg font-bold tracking-wide text-white">NECK TIES</h3>
+                        <p class="text-xs text-neutral-400 mt-1 leading-relaxed">Linear focal points crafted from premium materials to refine your profile alignment.</p>
+                    </div>
+                </div>
+                <div class="mt-6 pt-4 border-t border-neutral-900 flex items-center justify-between font-cyber text-[10px] tracking-widest">
+                    <span class="text-neutral-500">SYSTEM ARCHIVE: 04</span>
+                    <a href="https://wa.me/2348066299066?text=I'm%20interested%20in%20your%20Neck%20Ties" target="_blank" class="text-[#d4af37] group-hover:underline">ACQUIRE <i class="fa-solid fa-arrow-right ml-1"></i></a>
+                </div>
+            </div>
+
+            <div class="bg-neutral-950 border border-neutral-900 rounded-xl p-5 hover:border-[#d4af37]/50 transition-all duration-300 flex flex-col justify-between group relative overflow-hidden">
+                <div class="space-y-4">
+                    <div class="w-12 h-12 rounded-lg bg-neutral-900 flex items-center justify-center border border-neutral-800 text-[#d4af37] text-xl font-bold group-hover:bg-[#d4af37] group-hover:text-black transition-all duration-300">
+                        <i class="fa-solid fa-vest"></i>
+                    </div>
+                    <div>
+                        <h3 class="font-luxury text-lg font-bold tracking-wide text-white">WAIST COAT</h3>
+                        <p class="text-xs text-neutral-400 mt-1 leading-relaxed">The bedrock layer of formal wear, maximizing core structural precision and definition.</p>
+                    </div>
+                </div>
+                <div class="mt-6 pt-4 border-t border-neutral-900 flex items-center justify-between font-cyber text-[10px] tracking-widest">
+                    <span class="text-neutral-500">SYSTEM ARCHIVE: 05</span>
+                    <a href="https://wa.me/2348066299066?text=I'm%20interested%20in%20your%20Waist%20Coats" target="_blank" class="text-[#d4af37] group-hover:underline">ACQUIRE <i class="fa-solid fa-arrow-right ml-1"></i></a>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <section id="reviews" class="py-24 bg-neutral-950/40 border-y border-neutral-900 relative z-10">
+        <div class="max-w-7xl mx-auto px-6">
+            <div class="flex flex-col md:flex-row justify-between items-center mb-12 gap-4">
+                <div>
+                    <span class="font-cyber text-[10px] tracking-widest text-[#d4af37]">DECENTRALIZED SOCIAL PROOF</span>
+                    <h2 class="font-luxury text-3xl font-bold tracking-wide text-white mt-1">THE FEEDBACK TELEMETRY</h2>
+                </div>
+                <div class="font-cyber text-xs border border-neutral-800 bg-black rounded-lg px-4 py-2 text-neutral-400">
+                    STATUS: <span class="text-green-400 font-bold">STREAMING VERIFIED CONTENT</span>
+                </div>
+            </div>
+
+            <div id="reviews-container" class="grid grid-cols-1 md:grid-cols-3 gap-6">
+                <div class="bg-neutral-950 border border-neutral-900 p-6 rounded-xl animate-pulse">
+                    <div class="h-4 bg-neutral-900 w-1/4 rounded mb-4"></div>
+                    <div class="h-3 bg-neutral-900 w-full rounded mb-2"></div>
+                    <div class="h-3 bg-neutral-900 w-5/6 rounded"></div>
+                </div>
+                <div class="bg-neutral-950 border border-neutral-900 p-6 rounded-xl animate-pulse">
+                    <div class="h-4 bg-neutral-900 w-1/4 rounded mb-4"></div>
+                    <div class="h-3 bg-neutral-900 w-full rounded mb-2"></div>
+                    <div class="h-3 bg-neutral-900 w-5/6 rounded"></div>
+                </div>
+                <div class="bg-neutral-950 border border-neutral-900 p-6 rounded-xl animate-pulse">
+                    <div class="h-4 bg-neutral-900 w-1/4 rounded mb-4"></div>
+                    <div class="h-3 bg-neutral-900 w-full rounded mb-2"></div>
+   
